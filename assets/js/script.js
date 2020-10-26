@@ -55,7 +55,11 @@ function winRoll(params) {
     rerollCount--;
     initRoll();
 }
-
+function lossRoll(params) {
+    heroes[randomHero].losses++;
+    losses.textContent = heroes[randomHero].losses
+    initRoll();
+}
 
 function clearLocal(params) {
     localStorage.clear('clear')
@@ -65,6 +69,6 @@ function clearLocal(params) {
 clear.addEventListener('click',clearLocal)
 btn.addEventListener('click', reroll)
 winBtn.addEventListener('click', winRoll)
-//lossBtn.addEventListener('click', lossRoll)
+lossBtn.addEventListener('click', lossRoll)
 initRoll();
 
