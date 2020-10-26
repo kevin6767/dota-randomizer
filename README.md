@@ -1,4 +1,4 @@
-#
+# https://kevin6767.github.io/dota-randomizer/
 
 
 
